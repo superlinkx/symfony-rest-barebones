@@ -1,0 +1,21 @@
+POST http://127.0.0.1:8000/customer
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@email.domain",
+  "phone_number": "11111111111"
+}
+
+###
+GET http://127.0.0.1:8000/customer/1
+
+###
+PUT http://127.0.0.1:8000/customer/1
+
+{
+  "last_name": "Dinklage"
+}
+
+###
+DELETE http://127.0.0.1:8000/customer/51

@@ -9,5 +9,17 @@
     "**/bower_components/**",
     "**/vendor/**/{Tests,tests}/**",
     "**/.history/**"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "localhost",
+      "database": "app",
+      "username": "app",
+      "password": "!ChangeMe!"
+    }
   ]
 }

@@ -25,6 +25,18 @@ class Customer
     #[ORM\Column(length: 255)]
     private ?string $phoneNumber = null;
 
+    public function __construct(
+        string $firstName = null,
+        string $lastName = null,
+        string $email = null,
+        string $phoneNumber = null
+    ) {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->email = $email;
+        $this->phoneNumber = $phoneNumber;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
