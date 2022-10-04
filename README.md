@@ -18,12 +18,16 @@ In order to get the default database up and running, use `docker-compose up -d` 
 docker-in-docker). This will run Postgres with the default parameters and forward port 5432.
 
 The following commands will need to be run when working with a fresh database:
-- `bin/console doctrine:migrations:migrate`
-- `bin/console doctrine:fixtures/load`
+```console
+foo@bar:~$ bin/console doctrine:migrations:migrate
+foo@bar:~$ bin/console doctrine:fixtures/load
+```
 
 This will run the current migrations and seed the database with Faker data.
 
 Start the app:
-- `symfony server:start`
+```
+foo@bar:~$ symfony server:start
+```
 - Open `127.0.0.1:8000` in a browser to see the default Symfony landing to see if it's working
 - Can either run Postman against the endpoints or use the `example.http` with the VS Code "Rest Client" extension to try out some example endpoints
